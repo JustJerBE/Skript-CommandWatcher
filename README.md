@@ -18,4 +18,5 @@ This command is the command to toggle the messages when someone executes a comma
 Right now, no one told me that his/her server is using this!
 Send my your server IP and I will check if you use it, and then your server IP can be listed here!​
 
-### Version history
+## Versions
+[V1.0]()
