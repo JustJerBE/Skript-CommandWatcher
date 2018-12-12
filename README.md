@@ -1,5 +1,5 @@
 # CommandWatcher
-> Download the right Skript version for your MineCraft version. I tested it using dev36
+> Download the right Skript version for your MineCraft version. I tested it using dev36.
 
 What is CommandWatcher?
 CommandWatcher is a Skript plugin that is able to show the commands that people execute.
