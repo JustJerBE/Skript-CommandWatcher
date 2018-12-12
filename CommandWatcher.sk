@@ -1,0 +1,24 @@
+on command:
+  player is online
+  if command does not contain "login":
+    if command is set:
+      if arguments are not set:
+        loop all players:
+          if {cw.%loop-player%} is true:
+            if event-player is not loop-player:
+              send "&f[&3CW&f] &b%player% &fexecuted: &b/%command%" to loop-player
+      if arguments are set:
+        loop all players:
+          if {cw.%loop-player%} is true:
+            if event-player is not loop-player:
+              send "&f[&3CW&f] &b%player% &fexecuted: &b/%command% %arguments%" to loop-player
+
+command /cw:
+  trigger:
+    if player has permission "commandwatcher.use":
+      if {cw.%player%} is not set:
+        set {cw.%player%} to true
+        send "&f[&3CW&f] &bCommandWatcher &fhas been &aenabled&f!"
+      else:
+        delete {cw.%player%}
+        send "&f[&3CW&f] &bCommandWatcher &fhas been &cdisabled&f!"
